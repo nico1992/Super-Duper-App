@@ -1,0 +1,30 @@
+extends layout
+
+block content
+	section#noticeoc.notice.clearfix
+		.close-one.modal
+		.tit-notice.modal
+			span.txt-whoops Whoops! We didn't recognise your username or password.Please try again. 
+		.clearfix.r-close.modal
+			.close
+				a#closemodal(href='') &#215
+	section.bg
+		.con-cent-mod
+			.cent-mod
+				.box-s
+					.heading
+						span.tit-log Login to Super Duper App
+					.bt-mod
+						form(action='')
+							.mod-form
+								input(type='text', placeholder='Username or Email')
+								input(type='text', placeholder='Password')
+							.chklog.clearfix
+								.left-chk
+									input(type='checkbox')
+									span Remember me on this computer
+								.right-chk
+									button#btn Login
+		.forgotten
+			span.click-here Forgot your password? 
+			a click here to reset it.

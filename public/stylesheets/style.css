@@ -1,0 +1,251 @@
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+html{
+	height: 100%;
+}
+/*genereles*/
+
+body{
+	text-align: center;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 12px;
+}
+a{
+
+	text-decoration: none;
+	color: #ccc;
+	cursor: pointer;
+}
+input[type="checkbox"]{
+	margin:0px;
+	vertical-align: top;
+}
+input[type="text"]{
+	border-right-color: #b9bcbe;
+  border-bottom-color: #b9bcbe;
+	width: 300px;
+	height: 33px;
+	padding-left: 10px;
+	border-width: 1px;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+ 	-o-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+}
+input[type="text"]{
+-moz-box-shadow:    inset 0 0 4px #aaa;
+   -webkit-box-shadow: inset 0 0 4px #aaa;
+   box-shadow:         inset 0 0 4px #aaa;}
+input[type="text"]:hover{
+	-ms-box-shadow: 0px 0px 0px 4px rgba(224,241,252,1);
+	-o-box-shadow: 0px 0px 0px 4px rgba(224,241,252,1);
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(224,241,252,1);
+	-moz-box-shadow: 0px 0px 0px 3px rgba(224,241,252,1);
+	box-shadow: 0px 0px 0px 3px rgba(224,241,252,1);
+}
+/*clearfix*/
+	.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+	}
+	.clearfix {
+	display: inline-block;
+	}
+	html[xmlns] .clearfix {
+	display: block;
+	}
+	* html .clearfix {
+	height: 1%;
+	}
+/*contenido*/
+section.notice{
+	  position: fixed;
+  z-index: 20;
+	  top: 0px;
+  left: 0px;
+	color: #e34848;
+	vertical-align: middle;
+	width: 100%;
+	
+	font-weight: bold;
+	font-size: 14px;
+	border-bottom-style: solid;
+	border-bottom-width: 5px;
+	border-bottom-color: #eaeff3;
+	background-color: #f3fbfd;
+}
+section.notice .tit-notice{
+	padding-top: 20px;
+	margin:0 50px;
+	padding-bottom: 10px;
+}
+.close-one{
+	width: 25px;
+	float: left;
+}
+.txt-whoops{
+	text-align: center;
+
+}
+.r-close{
+	float: right;
+	margin-top: -30px;
+}
+.close{
+	display: inline-block;
+	height: 100%;
+	font-size: 20px;
+	color:#b2bbbf;
+	padding-right: 15px;
+	cursor:  pointer;
+	font-weight: bold;
+	width: 25px:;
+}
+.close a:hover{
+	color:#717c81;
+}
+section.bg{
+	background: url("../images/bg.png");
+	background-repeat: repeat;
+	width: 100%;
+	position:absolute;
+	height:  100vh;
+}
+.bg .con-cent-mod{
+
+	padding-top: 150px;
+}
+.bg .cent-mod{
+	margin:0 auto;
+	width: 360px;
+
+	
+	-webkit-box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
+-moz-box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
+box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
+}
+.box-s{
+	-webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+	-moz-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+	box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+	-ms-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+	-o-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0.05);
+	border-radius: 1px;
+}
+.bg .heading{
+
+	height: 45px;
+	border-top-left-radius: 3px;
+	-moz-border-top-left-radius: 3px;
+	-ms-border-top-left-radius: 3px;
+	-o-border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-top-right-radius: 3px;
+	-ms-border-top-right-radius: 3px;
+	-o-border-top-right-radius: 3px;
+	background-color: #f3f6f8;
+	color: #555555;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #bfc3c5
+}
+.bg .heading .tit-log{
+	position: relative;
+	top:15px;
+}
+.bg .bt-mod{
+	height: 190px;
+	background-color: #fdfdfd;
+	padding-top: 22px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+.bg .bt-mod .chklog .right-chk #btn{
+	margin-top: 3px;
+	margin-right: 16px;
+	border-radius: 25px;
+	border: 2px solid ;
+	border-color: #b6cbd1;
+	background-color: #e2f0f5;
+	color: #527988;
+	padding:7px 20px;
+	cursor: pointer;
+	box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+	-o-box-shadow: 0px 0px 0px 4px rgba(245,245,245,1);
+		font-weight: bold;
+}
+.bg .bt-mod .chklog .right-chk #btn:active{
+	box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
+
+	-webkit-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-o-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	
+}
+.bg .bt-mod .chklog .right-chk #btn:hover{
+	-webkit-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-o-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+
+}
+.bg .bt-mod .chklog{
+	width: 100%;
+	margin-top: 7px;
+}
+.bg .bt-mod .chklog .left-chk{
+	float:left;
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 23px;
+}
+.bg .bt-mod .chklog .right-chk{
+	width: 30%;
+	display: inline-block;
+	float: right;
+}
+.bg .forgotten{
+	margin-top: 30px;
+	color:white;
+}
+.bg .forgotten a{
+	color:#cbebf6;
+	
+}
+.bg .forgotten .click-here{
+	color:white;
+}
