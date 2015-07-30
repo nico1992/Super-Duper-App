@@ -19,15 +19,14 @@ time, mark, audio, video {
 	vertical-align:baseline;
 	background:transparent;
 }
-html{
-	height: 100%;
-}
+
 /*genereles*/
 
 body{
 	text-align: center;
 	font-family: 'Helvetica Neue', sans-serif;
 	font-size: 12px;
+	 background: url("../images/bg.png");
 }
 a{
 
@@ -37,7 +36,8 @@ a{
 }
 input[type="checkbox"]{
 	margin:0px;
-	vertical-align: top;
+	vertical-align: bottom;
+	margin-right: 10px;
 }
 input[type="text"]{
 	border-right-color: #b9bcbe;
@@ -103,7 +103,7 @@ section.notice{
 section.notice .tit-notice{
 	padding-top: 20px;
 	margin:0 50px;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 }
 .close-one{
 	width: 25px;
@@ -115,7 +115,7 @@ section.notice .tit-notice{
 }
 .r-close{
 	float: right;
-	margin-top: -30px;
+	margin-top: -33px;
 }
 .close{
 	display: inline-block;
@@ -131,7 +131,6 @@ section.notice .tit-notice{
 	color:#717c81;
 }
 section.bg{
-	background: url("../images/bg.png");
 	background-repeat: repeat;
 	width: 100%;
 	position:absolute;
@@ -188,11 +187,14 @@ box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
+#btn:focus{
+	outline: 0px;
+}
 .bg .bt-mod .chklog .right-chk #btn{
 	margin-top: 3px;
 	margin-right: 16px;
 	border-radius: 25px;
-	border: 2px solid ;
+	border: 1px solid ;
 	border-color: #b6cbd1;
 	background-color: #e2f0f5;
 	color: #527988;
@@ -209,23 +211,23 @@ box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
 .bg .bt-mod .chklog .right-chk #btn:active{
 	box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
 
-	-webkit-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
-	-moz-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
-	-ms-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
-	-o-box-shadow: inset -23px 94px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-webkit-box-shadow: inset 0px 0px 6px 1px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: inset 0px 0px 6px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: inset 0px 0px 6px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-o-box-shadow: inset 0px 0px 6px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
 	
 }
 .bg .bt-mod .chklog .right-chk #btn:hover{
-	-webkit-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
-	-moz-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
-	-ms-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
-	-o-box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
-	box-shadow: inset 79px -22px 22px -77px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-webkit-box-shadow: inset 0px 0px 2px 1px rgba(187,213,223,1), 0px 0px 0px 4px rgba(245,245,245,1);
+	-moz-box-shadow: inset 0px 0px 2px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-ms-box-shadow: inset 0px 0px 2px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	-o-box-shadow: inset 0px 0px 2px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
+	box-shadow: inset 0px 0px 2px 1px rgba(187,213,223,1),  0px 0px 0px 4px rgba(245,245,245,1);
 
 }
 .bg .bt-mod .chklog{
 	width: 100%;
-	margin-top: 7px;
+	margin-top: 6px;
 }
 .bg .bt-mod .chklog .left-chk{
 	float:left;
@@ -239,8 +241,8 @@ box-shadow: 10px 10px 169px -9px rgba(255,255,255,0.33);
 	float: right;
 }
 .bg .forgotten{
-	margin-top: 30px;
 	color:white;
+	margin-top: 30px;
 }
 .bg .forgotten a{
 	color:#cbebf6;
